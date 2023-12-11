@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeComponent } from './home/home.component';
@@ -8,6 +9,10 @@ import { UpdateComponent } from './Components/update/update.component';
 import { AddComponent } from './Components/add/add.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { ImageUploadComponent } from './Components/image-upload/image-upload.component';
+import { RessourceListComponent } from './Components/ressource-list/ressource-list.component';
+import { RessourceDetailComponent } from './Components/ressource-detail/ressource-detail.component';
+import { RessourceFormComponent } from './Components/ressource-form/ressource-form.component';
+
 
 
 @NgModule({
@@ -18,11 +23,17 @@ import { ImageUploadComponent } from './Components/image-upload/image-upload.com
     AddComponent,
     NavBarComponent,
     ImageUploadComponent,
-    HomeComponent
+    HomeComponent,
+    RessourceListComponent,
+    RessourceDetailComponent,
+    RessourceFormComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
